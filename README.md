@@ -1,4 +1,3 @@
 # Elle_OS
 
-
-I just created this one. It has a stage bootloader that loads the kernel named core. Its does not have a file system. I use the link.ld to handle loading the bootloader stages, the core, and handle the stack.
+ Elle has a 2 stage bootloader that loads the kernel named core. I use a link.ld script instead of the file system in the booting process. The link.ld handle loading the bootloader stages, the core, and handle the stack.
