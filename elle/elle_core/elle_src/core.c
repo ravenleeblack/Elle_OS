@@ -46,11 +46,10 @@ int _core(int argc, const char *argv[])
     //we want to collect all the output from here till after the hlt is done uninhibited so we have proper output.
     // pretty sure this is where we would make a while loop to start handling system requests. 
 
-    //request_system_clock(50);        // guess we shouldnt be usually the actual function here, but rather the request handler?
-    //request_system_keyboard(1);      // guess we shouldnt be usually the actual function here, but rather the request handler?
+    //request_system_clock(50);        // guess we shouldnt be using the actual function here, but rather the request handler thats already setup?
+    //request_system_keyboard(1);      // guess we shouldnt be using the actual function here, but rather the request handler thats already setup?
 
-
-    asm("int $13"); // Service exception test: Trigger GPF after sti
+    asm("int $13"); // Service exception test: Trigger GPF after sti.
 
     while(1)
     {
