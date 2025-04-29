@@ -1,0 +1,4 @@
+ABCD
+BCDE
+FABC
+0x0F
